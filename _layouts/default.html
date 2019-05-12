@@ -77,6 +77,22 @@ function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement(
     </div>
 <div class="main-content">
         {{ content }}
+     <script>
+(function () {
+  'use strict'
+
+  if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+    var msViewportStyle = document.createElement('style')
+    msViewportStyle.appendChild(
+      document.createTextNode(
+        '@-ms-viewport{width:auto!important}'
+      )
+    )
+    document.head.appendChild(msViewportStyle)
+  }
+
+}())
+     </script>
           <script>
           jQuery(document).ready(function($){if($(".hideshare")[0]){var topOfOthDiv=$(".hideshare").offset().top;$(window).scroll(function(){if($(window).scrollTop()>topOfOthDiv){$(".share").hide()}
 else{$(".share").show()}})}
@@ -169,7 +185,6 @@ $('.site-content').css('margin-top',$('header').outerHeight()+'px');$("a.sscroll
    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>   
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-<script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script>
 <script type='text/javascript' src='{{ site.baseurl }}/assets/js/masonry.pkgd.min.js'></script>
 </body> 
 </html>
