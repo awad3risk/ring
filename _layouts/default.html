@@ -78,13 +78,13 @@ function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement(
 <div class="main-content">
         {{ content }}
      </div>
- <script>
+    </div><!-- /.container --> 
+         <script>
 !function(){"use strict";if(navigator.userAgent.match(/IEMobile\/10\.0/)){var e=document.createElement("style");e.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}")),document.head.appendChild(e)}}();
      </script>
           <script>
           jQuery(document).ready(function(o){if(o(".hideshare")[0]){var e=o(".hideshare").offset().top;o(window).scroll(function(){o(window).scrollTop()>e?o(".share").hide():o(".share").show()})}var t;if(jQuery(window).scroll(function(){jQuery(this).scrollTop()>1250?jQuery(".back-to-top").fadeIn(800):jQuery(".back-to-top").fadeOut(800)}),jQuery(".back-to-top").click(function(o){return o.preventDefault(),jQuery("html, body").animate({scrollTop:0},800),!1}),o(document).scroll(function(){o(this).scrollTop()>280?o(".alertbar").fadeIn():o(".alertbar").fadeOut()}),o(".masonrygrid").length){var a=o(".masonrygrid").masonry({itemSelector:".grid-item"});a.imagesLoaded().progress(function(){a.masonry()})}o('a.smoothscroll[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(e){if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var t=o(this.hash);(t=t.length?t:o("[name="+this.hash.slice(1)+"]")).length&&(e.preventDefault(),o("html, body").animate({scrollTop:t.offset().top},1e3,function(){var e=o(t);if(e.focus(),e.is(":focus"))return!1;e.attr("tabindex","-1"),e.focus()}))}});var r=0,n=5,s=o("header").outerHeight();o(window).scroll(function(o){t=!0}),setInterval(function(){t&&(!function(){var e=o(this).scrollTop();o(".brandrow").css("height");if(Math.abs(r-e)<=n)return;e>r&&e>s?(o("header").removeClass("nav-down").addClass("nav-up"),o(".nav-up").css("top",-o("header").outerHeight()+"px")):e+o(window).height()<o(document).height()&&(o("header").removeClass("nav-up").addClass("nav-down"),o(".nav-up, .nav-down").css("top","0px"));r=e}(),t=!1)},250),o(".site-content").css("margin-top",o("header").outerHeight()+"px"),o("a.sscroll[href='#totop']").click(function(){return o("html, body").animate({scrollTop:0},"slow"),!1});var i=o("#jumptopageof");i.length&&o("body,html").animate({scrollTop:o(i).offset().top-0},800)});<script>
    
-    </div><!-- /.container --> 
 <div class="beforefooter">
         <div class="container">
             <div class="row justify-content-center">
